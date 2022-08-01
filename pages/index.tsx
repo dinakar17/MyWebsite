@@ -12,7 +12,7 @@ import {BsTwitter, BsInstagram, BsGithub} from 'react-icons/bs';
 function App() {
   return (
     <div className="relative font-default">
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <About />
       <Work />

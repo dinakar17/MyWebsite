@@ -16,6 +16,14 @@ body {
   box-shadow: 0px 4px 29px rgba(128, 53, 221, 0.52);
 }
 
+.custom-text-shadow{
+  text-shadow: 2px 2px 2px rgb(78, 16, 148), 2px 2px 2px rgb(100, 13, 200);
+}
+
+.custom-text-shadow2{
+  text-shadow: 2px 2px 8px #000000;
+}
+
 html {
   scroll-behavior: smooth;
 }

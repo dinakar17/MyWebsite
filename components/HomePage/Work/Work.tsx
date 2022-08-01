@@ -100,7 +100,7 @@ const ListOfWorks = [
     description:
       "Built using Flutter package and managed the ML model using Flask backend.",
     tags: ["Mobile App"],
-    image: images.flashChat,
+    image: images.foodClassifier,
   },
   {
     name: "Image Caption Generator",
@@ -110,7 +110,7 @@ const ListOfWorks = [
     description:
       "Explored this domain using pre-trained VGG16, InceptionV3 and Word2Vec models and had fun and frustration through out.",
     tags: ["ML/AI"],
-    image: images.flashChat,
+    image: images.imageClassifier,
   },
 ];
 
@@ -130,7 +130,7 @@ const Work = () => {
       <div className="w-[80%] mx-auto">
         {/* Alternative to mt-[10%] mb-[2%]? (flex)*/}
         <h4 className="text-center text-5xl mt-[10%] mb-[2%]">
-          My Creative Portfolio Section
+          My Creative <span className="font-bold text-primary">Portfolio</span>Section
         </h4>
         <div className="flex gap-5 flex-wrap justify-center items-center">
           {["UI/UX", "Web App", "Mobile App", "ML/AI", "All"].map(
@@ -168,11 +168,11 @@ const Work = () => {
                 // height={3000}
                 layout="fill"
                 objectFit="cover"
-                className="group-hover:opacity-50 w-full h-full rounded-xl"
+                className="opacity-75 lg:opacity-100 lg:group-hover:opacity-50 w-full h-full rounded-xl"
               />
-              <div className="absolute w-[90%] top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:-translate-y-1/2 text-white transition-all flex flex-col gap-2">
-                <h4 className="font-extrabold text-2xl text-center text-primary">{work.name}</h4>
-                <p className="italic text-lg">{work.description}</p>
+              <div className="absolute w-[90%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:translate-y-1/2 lg:group-hover:-translate-y-1/2 text-white transition-all flex flex-col gap-2">
+                <h4 className="font-extrabold text-2xl text-center text-primary custom-text-shadow">{work.name}</h4>
+                <p className="italic text-lg custom-text-shadow2">{work.description}</p>
                 <div className="flex justify-evenly">
                   <button className="bg-primary p-2 custom-shadow rounded-full">Github</button>
                   <button className="flex items-center gap-1"><AiFillEye className="scale-110"/> View</button>

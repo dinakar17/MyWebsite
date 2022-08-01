@@ -18,6 +18,14 @@ import flask from "../public/static/assets/skills/flask.svg";
 import mongodb from "../public/static/assets/skills/mongodb.svg";
 import tensorflow from "../public/static/assets/skills/tensorflow.png";
 import firebase from "../public/static/assets/skills/firebase.svg";
+import keras from "../public/static/assets/skills/keras.png";
+
+// tools
+import git from "../public/static/assets/skills/tools/git.svg";
+import afterEffects from "../public/static/assets/skills/tools/afterEffects.svg";
+import premierePro from "../public/static/assets/skills/tools/adobe.svg";
+import photoshop from "../public/static/assets/skills/tools/adobe-photoshop.svg";
+import windows from "../public/static/assets/skills/tools/windows.svg";
 
 import flutterDeveloper from "../public/static/assets/about/FlutterDeveloper.png";
 import MLEngineer from "../public/static/assets/about/MLEngineer.jpg";
@@ -48,6 +56,8 @@ import portfolio from "../public/static/assets/work/portfolio.jpg";
 import weatherApp from "../public/static/assets/work/weatherapp.jpg";
 import todoApp from "../public/static/assets/work/todoapp.jpg";
 import flashChat from "../public/static/assets/work/flashchat.jpg";
+import foodClassifier from "../public/static/assets/work/foodClassifier.jpg";
+import imageClassifier from "../public/static/assets/work/imageclassification.jpg";
 
 // Blog Page Assets export here.... (export to another folder later)
 import nature from "../public/static/BlogPageAssets/nature.jpg";
@@ -92,4 +102,13 @@ export default {
   weatherApp,
   todoApp,
   flashChat,
+  foodClassifier,
+  imageClassifier,
+  // tools,
+  git,
+  afterEffects,
+  premierePro,
+  photoshop,
+  windows,
+  keras,
 };

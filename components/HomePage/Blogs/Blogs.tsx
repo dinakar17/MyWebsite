@@ -1,16 +1,19 @@
 import Image from "next/image";
-import { images } from "../../../constants";
+import { useRouter } from "next/router";
+import { blogImages, images } from "../../../constants";
 
 const content = [
   {
-    image: images.blog1,
+    image: blogImages.api,
     tag: "Web Developement",
-    description: "Jim Morisson Says when the musics over turn off the light",
+    link: "/blog/what-the-heck-is-an-api",
+    description: "What the Heck is an API?",
   },
   {
-    image: images.blog2,
+    image: blogImages.tailwind,
     tag: "Web Developement",
-    description: "Jim Morisson Says when the musics over turn off the light",
+    description: "Why Tailwind is the King among CSS Frameworks?",
+    link: "/blog/why-tailwindcss",
   },
   {
     image: images.blog3,
@@ -20,6 +23,7 @@ const content = [
 ];
 
 const Blogs = () => {
+  const router = useRouter();
   return (
     <section className="min-h-screen font-default overflow-hidden">
       {/* Alternative to my-[5%]? */}
@@ -28,15 +32,14 @@ const Blogs = () => {
           <p className="font-bold text-primary text-lg">Latest News</p>
           <h4 className="text-3xl font-bold">Check Out my Recent Blogs</h4>
           <p className="text-lg">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in
-            reprehen derit in voluptate
+           Here are some of my recently written blogs
           </p>
         </div>
         <div className="grid gap-10 md:grid-flow-col md:auto-cols-[1fr] my-[2%]">
           {content.map((item, index) => (
             <div key={index}>
               {/* overflow-hidden property is important here */}
-              <div className="w-full overflow-hidden cursor-pointer rounded-lg">
+              <div className="w-full overflow-hidden cursor-pointer rounded-lg cursor-pointer" onClick={() => router.push(`${item.link}`)}>
                 {/* play with transition */}
                 <Image
                   src={item.image}

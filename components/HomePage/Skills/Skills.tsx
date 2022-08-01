@@ -13,25 +13,35 @@ const skills = [
     { name: "TypeScript", bgColor: "...", icon: images.typescript },
     { name: "MongoDB", bgColor: "...", icon: images.mongodb },
     { name: "CSS3", bgColor: "...", icon: images.css },
-    { name: "Keras", bgColor: "...", icon: images.css },
+    { name: "Keras", bgColor: "...", icon: images.keras },
     { name: "Tensorflow", bgColor: "...", icon: images.tensorflow },
     { name: "JavaScript", bgColor: "...", icon: images.javascript },
     { name: "Firebase", bgColor: "...", icon: images.firebase }, 
   ];
 const tools = [
   {
-    icon: images.firebase,
-    name: "Firebase",
+    icon: images.git,
+    name: "Git",
     bgColor: '...'
   },
   {
-    icon: images.flask,
-    name: "Flask",
+    icon: images.photoshop,
+    name: "Photoshop",
     bgColor: '...'
   },
   {
-    icon: images.css,
-    name: "CSS3",
+    icon: images.afterEffects,
+    name: "After Effects",
+    bgColor: '...'
+  },
+  {
+    icon: images.premierePro,
+    name: "Premiere Pro",
+    bgColor: '...'
+  },
+  {
+    icon: images.windows,
+    name: "Windows",
     bgColor: '...'
   },
 ];
@@ -79,8 +89,9 @@ const Skills = () => {
                 <Image
                   src={item.icon}
                   alt={item.name}
-                  width={64}
-                  height={64}
+                  // layout="fill"
+                  width={60}
+                  height={60}
                   className="h-full w-full rounded-full bg-gray-200"
                 />
                 <p>{item.name}</p>
