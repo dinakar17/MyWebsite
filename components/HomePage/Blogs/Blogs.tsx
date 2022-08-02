@@ -16,9 +16,10 @@ const content = [
     link: "/blog/why-tailwindcss",
   },
   {
-    image: images.blog3,
-    tag: "Web Developement",
-    description: "Jim Morisson Says when the musics over turn off the light",
+    image: blogImages.deepLearningApplications,
+    tag: "ML/AI",
+    link: "/blog/deep-learning-and-its-applications",
+    description: "Deep Learning and Its applications",
   },
 ];
 

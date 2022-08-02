@@ -8,7 +8,7 @@ const BlogsList = () => {
   const router = useRouter();
   const blogPosts = [
     {
-      date: "27th July, 2022",
+      date: "21th July, 2022",
       topic: "Lorem ipsum dolor",
       tags: ["Web", "api"],
       title: "What the Heck is an API?",
@@ -16,36 +16,36 @@ const BlogsList = () => {
       image: blogImages.api
     },
     {
-      date: "27th July, 2022",
+      date: "19th July, 2022",
       topic: "Lorem ipsum dolor",
-      tags: ["Lorem", "Lorem", "Lorem"],
+      tags: ["Web Development", "Lorem", "Lorem"],
       title: "Why is Tailwind CSS the King among CSS frameworks",
       link: "/blog/why-tailwindcss",
       image: blogImages.tailwind,
     },
     {
-      date: "27th July, 2022",
-      topic: "Lorem ipsum dolor",
-      tags: ["Lorem", "Lorem", "Lorem"],
-      title: "Lorem ipsum dolor sit amet, consectetur",
-      link: "/blog/why-tailwindcss",
-      image: images.nature,
+      date: "20th July, 2022",
+      topic: "Deep Learning",
+      tags: ["ML/AI", "Lorem", "Lorem"],
+      title: "Deep Learning & Its applications",
+      link: "/blog/deep-learning-and-its-applications",
+      image: blogImages.deepLearningApplications,
     },
     {
-      date: "27th July, 2022",
+      date: "22nd July, 2022",
       topic: "Lorem ipsum dolor",
-      tags: ["Web Development", "CSS"],
-      title: "Lorem ipsum dolor sit amet, consectetur",
-      link: "/blog/why-tailwindcss",
-      image: images.nature,
+      tags: ["Web", "Web 3.0"],
+      title: "A Short Intro to the most buzzed Web 3.0",
+      link: "/blog/short-intro-to-web3.0",
+      image: blogImages.Web3Intro,
     },
     {
-      date: "27th July, 2022",
+      date: "12th July, 2022",
       topic: "Lorem ipsum dolor",
-      tags: ["Lorem", "Lorem", "Lorem"],
-      title: "Lorem ipsum dolor sit amet, consectetur",
-      link: "/blog/why-tailwindcss",
-      image: images.nature,
+      tags: ["Web", "Lorem", "Lorem"],
+      title: "Web Technologies to look after in 2022",
+      link: "/blog/web-technologies-to-learn-in-2022",
+      image: blogImages.WebTechnologies,
     },
   ];
 
@@ -76,7 +76,7 @@ const BlogsList = () => {
               <div>
                 <div className="flex justify-between font-bold text-gray-500">
                 <p>{blog.tags[0]}</p>
-                <p>{blog.date} || {blog.tags[0]}</p>
+                <p>{blog.date}</p>
                 </div>
                 <h4 className="text-xl font-bold text-center">{blog.title}</h4>
               </div>
